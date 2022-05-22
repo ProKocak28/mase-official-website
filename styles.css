@@ -1,0 +1,261 @@
+@font-face { font-family: Titles; src: url('/fonts/Kollektif.ttf'); } 
+@font-face { font-family: Texts; src: url('/fonts/Yantramanav.ttf'); }
+
+.main__title {
+    font-family: Titles;
+    font: bold;
+    font-size: 72px;
+}
+
+h2, h3 {
+    font-family: Titles;
+    font: bold;
+}
+
+a, p, li {
+    font-family: Texts;
+}
+
+.main__description {
+    font-size: xx-large;
+}
+
+.main__content {
+    width: 50%;
+    margin-right: 90%;
+    margin-left: 10%;
+}
+.games__container {
+  width: 50%;
+  margin-right: 90%;
+  margin-left: 10%;
+}
+
+.games__title {
+  font-size: xx-large;
+}
+
+.games__description {
+  font-size: larger;
+}
+
+.games__images--mfs--container {
+  position: absolute;
+  left: 10px;
+}
+
+.games__image--mfs {
+  width: 256px;
+  height: 256px;
+}
+
+.members {
+  width: 50%;
+  margin-right: 90%;
+  margin-left: 10%;
+  font-size: larger;
+}
+
+.members__list--ul {
+  list-style: none;
+  padding: 0;
+}
+.members__list {
+  padding-left: 1.3em;
+}
+.members__list:before {
+  content: "\f04b"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.updates__titles {
+  font-size: x-large;
+  font: bolder;
+}
+
+.updates__mfs3--v65 {
+  width: 50%;
+  margin-right: 90%;
+  margin-left: 10%;
+}
+
+.updates__list--ul {
+  list-style: none;
+  padding: 0;
+}
+.updates__list {
+  padding-left: 1.3em;
+}
+.updates__list:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+/*navbar*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #fff;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Titles";
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #009dff;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: #009dff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: #00c3ff;
+  }
+
+  .cta:active {
+    transform: translateY(4px);
+    transition-duration: .10s;
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+
+/* buttons */
+
+button {
+  padding: 5px 7px;
+  margin: 15px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  color: aliceblue;
+  background: #009dff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #00c3ff;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(4px);
+  transition-duration: .10s;
+}
+
+button:active:hover {
+  background: #00d0ff;
+}
