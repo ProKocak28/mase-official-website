@@ -108,6 +108,12 @@ a, p, li {
   	margin-bottom: 2%; /* Add some space before the border */
 }
 
+.discord__widget {
+  width: 50%;
+    margin-right: 90%;
+    margin-left: 10%;
+}
+
 /*navbar*/
 
 * {
