@@ -4,4 +4,4 @@
 
 ![Mase](https://i.imgur.com/MsOmZzO.jpg)
 
-©️ Mase 2022
+© Mase 2022
