@@ -129,6 +129,7 @@ a, p, li {
   margin-right: 90%;
   margin-left: 10%;
   font-size: x-large;
+  display: flex;
 }
 
 .socials__list--ul {
