@@ -180,6 +180,14 @@ a, p, li {
   width: 1.3em; /* same as padding-left set on li */
   padding-left: 1.3em;
 }
+.socials__list--github:before {
+  content: "\f09b"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  padding-left: 1.3em;
+}
 
 .socials__links {
   color: #000;
