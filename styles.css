@@ -172,6 +172,14 @@ a, p, li {
   width: 1.3em; /* same as padding-left set on li */
   padding-left: 1.3em;
 }
+.socials__list--blog:before {
+  content: "\f37c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  padding-left: 1.3em;
+}
 
 .socials__links {
   color: #000;
