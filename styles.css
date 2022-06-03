@@ -98,6 +98,7 @@ a, p, li {
   display: inline-block;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
+  color: var(--main-color);
 }
 
 .updates__titles {
@@ -180,6 +181,14 @@ a, p, li {
   color: var(--main-color);
   transition: color 0.3s ease 0s;
 }
+
+.crown-owner { color: gold; }
+
+.crown-co-owner { color: var(--main-color); }
+
+.crown-admin { color: #808080; }
+
+.crown-moderator { color: #cd7f32; }
 
 /*navbar*/
 
