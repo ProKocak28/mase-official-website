@@ -1,4 +1,4 @@
-@font-face { font-family: Titles; src: url('/fonts/Kollektif.ttf'); } 
+@font-face { font-family: Titles; src: url('/fonts/Kollektif.ttf'); }
 @font-face { font-family: Texts; src: url('/fonts/Yantramanav.ttf'); }
 
 :root {
@@ -129,12 +129,11 @@ a, p, li {
 
 .footer {
   position: absolute;
-  	bottom: 0;
-  
+
   	/* Align in the center of the page too */
   	left: 50%;
   	transform: translate(-50%, 0);
-  
+
   	margin-bottom: 2%; /* Add some space before the border */
 }
 
@@ -206,6 +205,30 @@ a, p, li {
 
 .crown-moderator { color: #cd7f32; }
 
+.display__card {
+  display: flex;
+}
+
+.display__card--games, .display__card--about, .display__card--teams {
+  width: 50%;
+  margin-right: 90%;
+  margin-left: 10%;
+}
+
+.display__card--links {
+  font-size: larger;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.display__card--links:hover {
+  text-decoration: underline 1.5px;
+}
+
+.display__card--links {
+  font-size: larger;
+}
+
 /*navbar*/
 
 * {
@@ -214,7 +237,7 @@ a, p, li {
     padding: 0;
     scroll-behavior: smooth;
   }
-  
+
   header {
     display: flex;
     justify-content: space-between;
@@ -222,11 +245,11 @@ a, p, li {
     padding: 30px 10%;
     background-color: #fff;
   }
-  
+
   .logo {
     cursor: pointer;
   }
-  
+
   .nav__links a,
   .cta,
   .overlay__content a {
@@ -235,24 +258,24 @@ a, p, li {
     color: #000;
     text-decoration: none;
   }
-  
+
   .nav__links {
     list-style: none;
     display: flex;
   }
-  
+
   .nav__links li {
     padding: 0px 20px;
   }
-  
+
   .nav__links li a {
     transition: color 0.3s ease 0s;
   }
-  
+
   .nav__links li a:hover {
     color: var(--main-color);
   }
-  
+
   .cta {
     padding: 9px 25px;
     background-color: var(--main-color);
@@ -261,7 +284,7 @@ a, p, li {
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
   }
-  
+
   .cta:hover {
     background-color: #00c3ff;
   }
@@ -270,13 +293,13 @@ a, p, li {
     transform: translateY(4px);
     transition-duration: .10s;
   }
-  
+
   /* Mobile Nav */
-  
+
   .menu {
     display: none;
   }
-  
+
   .overlay {
     height: 100%;
     width: 0;
@@ -288,11 +311,11 @@ a, p, li {
     overflow-x: hidden;
     transition: width 0.5s ease 0s;
   }
-  
+
   .overlay--active {
     width: 100%;
   }
-  
+
   .overlay__content {
     display: flex;
     height: 100%;
@@ -300,14 +323,14 @@ a, p, li {
     align-items: center;
     justify-content: center;
   }
-  
+
   .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: color 0.3s ease 0s;
   }
-  
+
   .overlay a:hover,
   .overlay a:focus {
     color: #0088a9;
@@ -319,7 +342,7 @@ a, p, li {
     font-size: 60px;
     color: #edf0f1;
   }
-  
+
   @media screen and (max-height: 450px) {
     .overlay a {
       font-size: 20px;
@@ -330,7 +353,7 @@ a, p, li {
       right: 35px;
     }
   }
-  
+
   @media only screen and (max-width: 800px) {
     .nav__links,
     .cta {
