@@ -9,6 +9,7 @@
         <meta charset="UTF-8" />
         <title>Mase - Teams</title>
         <link rel="shortcut icon" type="image/jpeg" href="/images/mase.jpeg" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -42,11 +43,11 @@
         <script type="text/javascript" src="navbar.js"></script>
 
         <div class="main__content">
-            <h1 class="main__title">Mase - Teams <i class="fa-solid fa-people-group"></i></h1>
-            <p class="main__description">Here are Mase Team members.</p>
+            <h1 class="main__title" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="center-bottom">Mase - Teams <i class="fa-solid fa-people-group"></i></h1>
+            <p class="main__description" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="center-bottom">Here are Mase Team members.</p>
         </div>
         <br><br>
-        <div class="members" id="members">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" class="members" id="members">
             <ul class="members__list--ul">
                 <li class="members__list">Wirya (Owner) <i class="fa-solid fa-crown crown-owner"></i></li>
                 <li class="members__list">Adi (Co-Owner) <i class="fa-solid fa-crown crown-co-owner"></i></li>
@@ -62,6 +63,10 @@
                 <li class="members__list">Angel (Member)</li>
             </ul>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="https://kit.fontawesome.com/d8ccac94eb.js" crossorigin="anonymous"></script>
     </body>
 </html>

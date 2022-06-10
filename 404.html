@@ -8,7 +8,8 @@
         <meta property="og:image"              content="https://i.imgur.com/MsOmZzO.jpg" />
         <meta charset="UTF-8" />
         <title>404 Page not Found</title>
-        <link rel="shortcut icon" type="image/jpeg" href="/images/mase.jpeg" />>
+        <link rel="shortcut icon" type="image/jpeg" href="/images/mase.jpeg" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -41,13 +42,17 @@
       </div>
         <script type="text/javascript" src="navbar.js"></script>
 
-        <div class="main__content">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="center-bottom" class="main__content">
             <h1 class="main__title">404 - Page not Found <i class="fa-solid fa-magnifying-glass"></i></h1>
             <p class="main__description">Sorry. But the page you are looking isn't available.</p>
             <a href="/">
                 <button>Back to Home Page</button>
             </a>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="https://kit.fontawesome.com/d8ccac94eb.js" crossorigin="anonymous"></script>
     </body>
 </html>

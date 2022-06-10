@@ -9,6 +9,7 @@
         <meta charset="UTF-8" />
         <title>Mase - Games</title>
         <link rel="shortcut icon" type="image/jpeg" href="/images/mase.jpeg" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -41,7 +42,7 @@
       </div>
         <script type="text/javascript" src="navbar.js"></script>
 
-        <div class="main__content">
+        <div class="main__content" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="center-bottom">
             <h1 class="main__title">Mase Games <svg width="72" height="72" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect id="Roblox" width="250" height="250" fill="url(#pattern0)"/>
                 <defs>
@@ -59,7 +60,7 @@
         </div>
         <br><br>
         <div class="games__container" id="games">
-            <div class="games__mfs">
+            <div class="games__mfs" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false">
                 <h2 class="games__title">Mase Flight Simulator</h2>
                 <p class="games__description">Drive planes in Roblox!</p>
                 <div class="games__images-mfs--container">
@@ -71,6 +72,10 @@
                 </a>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="https://kit.fontawesome.com/d8ccac94eb.js" crossorigin="anonymous"></script>
     </body>
 </html>
